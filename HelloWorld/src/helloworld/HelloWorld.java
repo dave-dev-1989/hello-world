@@ -1,10 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Simple hello world application which will have 
+ * more functions added over time.
  */
 package helloworld;
 
+//imports
+import java.util.Scanner;
 /**
  *
  * @author dave-dev-1989
@@ -15,8 +16,12 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hello, world!");
+        // create scanner object, fetch input and display a message
+        Scanner inputReader = new Scanner(System.in);
+        System.out.println("Enter your name");
+        
+        String userName = inputReader.nextLine();
+        System.out.println("Hello, " + userName + "!");
     }
     
 }
