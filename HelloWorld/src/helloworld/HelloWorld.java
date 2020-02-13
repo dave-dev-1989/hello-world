@@ -22,6 +22,9 @@ public class HelloWorld {
         
         String userName = inputReader.nextLine();
         System.out.println("Hello, " + userName + "!");
+        
+        // displays length of supplied name
+        System.out.println("Your name contains " + userName.length() + " letters.");
     }
     
 }
